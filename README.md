@@ -1,3 +1,6 @@
+The Infisical CLI is powerful command line tool that can be used to retrieve, modify, export and inject secrets into any process or application as environment variables. You can use it across various environments, whether it’s local development, CI/CD, staging, or production.
+
+
 ## Dockerfile Documentation: Infisical CLI on Alpine
 
 ### Overview
@@ -72,3 +75,7 @@ docker run -it infisical-image infisical --help
 ```
 
 This command runs the Infisical CLI inside the container.
+
+
+- [Infisical CLI Docs](https://infisical.com/docs/cli/overview)
+- [Github Repository](https://github.com/taufiqpsumarna/infisical-cli-docker)
