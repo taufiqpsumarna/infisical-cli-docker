@@ -72,7 +72,3 @@ docker run -it infisical-image infisical --help
 ```
 
 This command runs the Infisical CLI inside the container.
-
-### Conclusion
-
-This Dockerfile creates a minimal image with the Infisical CLI pre-installed. By using Alpine Linux and removing unnecessary files, it ensures an efficient and compact image suitable for development or production environments.
