@@ -1,7 +1,5 @@
+## infisical-cli-docker
 The Infisical CLI is powerful command line tool that can be used to retrieve, modify, export and inject secrets into any process or application as environment variables. You can use it across various environments, whether it’s local development, CI/CD, staging, or production.
-
-
-## Dockerfile Documentation: Infisical CLI on Alpine
 
 ### Overview
 This Dockerfile creates a lightweight container using the **Alpine 3.20.3** base image and installs the **Infisical CLI** with a specified version. The Dockerfile ensures a minimal image size by using Alpine Linux and cleaning up unnecessary files after installation.
