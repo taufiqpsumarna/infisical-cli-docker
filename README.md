@@ -2,25 +2,25 @@
 The Infisical CLI is powerful command line tool that can be used to retrieve, modify, export and inject secrets into any process or application as environment variables. You can use it across various environments, whether it’s local development, CI/CD, staging, or production.
 
 ### Overview
-This Dockerfile creates a lightweight container using the **Alpine 3.20.3** base image and installs the **Infisical CLI** with a specified version. The Dockerfile ensures a minimal image size by using Alpine Linux and cleaning up unnecessary files after installation.
+This Dockerfile creates a lightweight container using the **Alpine 3.22.2** base image and installs the **Infisical CLI** with a specified version. The Dockerfile ensures a minimal image size by using Alpine Linux and cleaning up unnecessary files after installation.
 
 ### Build Arguments
-- **INFISICAL_VERSION**: Defines the version of Infisical CLI to install. The default version is `0.31.0`, but this can be overridden at build time.
+- **INFISICAL_VERSION**: Defines the version of Infisical CLI to install. The default version is `0.43.32`, but this can be overridden at build time.
 
 ### Steps Explained
 
 1. **Base Image**:  
-   The Dockerfile uses `alpine:3.20.3` as the base image, which is known for its small size and efficiency.
+   The Dockerfile uses `alpine:3.22.2` as the base image, which is known for its small size and efficiency.
 
    ```dockerfile
-   FROM alpine:3.20.3
+   FROM alpine:3.22.2
    ```
 
 2. **Build Argument**:  
-   Defines a build argument for the Infisical version, defaulting to `0.31.0`. You can customize the version during the build.
+   Defines a build argument for the Infisical version, defaulting to `0.43.32`. You can customize the version during the build.
 
    ```dockerfile
-   ARG INFISICAL_VERSION=0.31.0
+   ARG INFISICAL_VERSION=0.43.32
    ```
 
 3. **Installing Dependencies**:  
@@ -59,10 +59,10 @@ This Dockerfile creates a lightweight container using the **Alpine 3.20.3** base
 To build the Docker image, use the following command. You can specify a different Infisical version by passing the build argument:
 
 ```sh
-docker build --build-arg INFISICAL_VERSION=0.32.0 -t infisical-image .
+docker build --build-arg INFISICAL_VERSION=0.43.32 -t infisical-image .
 ```
 
-This command will build the image with Infisical version `0.32.0`. If you don't provide a version, it defaults to `0.31.0`.
+This command will build the image with Infisical version `0.43.32`. If you don't provide a version, it defaults to `0.43.32`.
 
 ### Usage
 
