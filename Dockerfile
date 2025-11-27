@@ -1,7 +1,7 @@
-FROM alpine:3.20.3
+FROM alpine:3.22.2
 
 # Define build-time argument for Infisical version
-ARG INFISICAL_VERSION=0.31.8
+ARG INFISICAL_VERSION=0.43.32
 
 # Install dependencies, add Infisical CLI, and clean up in a single layer
 RUN apk --no-cache add curl gnupg bash \
